@@ -2,6 +2,7 @@ package ru.gb.jseminar;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 public class Task2 {
@@ -14,6 +15,16 @@ public class Task2 {
     }
 
     public static void printResultOfCheck(List<String> list){
+        Iterator <String> iter = list.iterator();
+        while (iter.hasNext()){
+            try{
+                Integer.valueOf(iter.next());
+                System.out.println("it's number");
+            }catch (NumberFormatException e){
+                System.out.println("it's string");
+            }
+
+        }
 
     }
 
