@@ -45,7 +45,8 @@ public class Homework {
     }
 
     // Найти среднее значение
-    public Integer getAverage(List<Integer> list){
-        return (getMax(list) - getMin(list)) / 2;
+    public double getAverage(List<Integer> list){
+        double answer = getMin(list) + (getMax(list) - getMin(list)) / (double) 2;
+        return answer;
     }
 }
