@@ -1,11 +1,10 @@
 package ru.gb.jseminar;
-
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 public class Task2 {
-
     // Дан список содержащий строки и числа в строковом формате.
     // C помощью итератора пройти по списку и вывести в консоль что является строкой, а что числом
     public static void main(String[] args) {
@@ -13,8 +12,16 @@ public class Task2 {
         printResultOfCheck(list);
     }
 
-    public static void printResultOfCheck(List<String> list){
-
+    public static void printResultOfCheck(List<String> list) {
+        Iterator <String> iter = list.iterator();
+        while (iter.hasNext()) {
+            try {
+                Integer.valueOf(iter.next());
+                System.out.println("it's number");
+            }
+            catch (NumberFormatException e) {
+                System.out.println("it's string");
+            }
+        }
     }
-
 }
