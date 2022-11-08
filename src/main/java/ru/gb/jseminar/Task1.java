@@ -2,6 +2,7 @@ package ru.gb.jseminar;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class Task1 {
@@ -13,7 +14,7 @@ public class Task1 {
     }
 
     public List<Integer> sortByCollections(List<Integer> list){
-
+        Collections.sort(list);
         return new ArrayList<>();
     }
 
