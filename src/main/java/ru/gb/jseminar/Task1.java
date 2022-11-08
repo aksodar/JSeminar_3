@@ -1,8 +1,6 @@
 package ru.gb.jseminar;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class Task1 {
 
@@ -13,13 +11,13 @@ public class Task1 {
     }
 
     public List<Integer> sortByCollections(List<Integer> list){
-
-        return new ArrayList<>();
+        Collections.sort(list);
+        return list;
     }
 
     public List<Integer> sortByComparator(List<Integer> list){
-
-        return new ArrayList<>();
+        Collections.sort(list, Collections.reverseOrder());
+        return list;
     }
 
 }
