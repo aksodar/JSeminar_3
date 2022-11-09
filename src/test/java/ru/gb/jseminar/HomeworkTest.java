@@ -10,8 +10,8 @@ import org.junit.jupiter.api.Test;
 class HomeworkTest {
     @Test
     void getMaxSuccessfull() {
-        List<Integer> expectedList = new ArrayList<>(Arrays.asList(1, 9, 0, 8, -3));
-        int expected = 9;
+        List<Integer> expectedList = new ArrayList<>(Arrays.asList(1, 9, 0, 8, -3, 10));
+        int expected = 10;
 
         Homework hw = new Homework();
         int actual = hw.getMax(expectedList);
@@ -21,8 +21,8 @@ class HomeworkTest {
 
     @Test
     void removeNegativeValueSuccessfull() {
-        List<Integer> expectedList = new ArrayList<>(Arrays.asList(1, 9, 0, 8, -3));
-        List<Integer> expected = new ArrayList<>(Arrays.asList(1, 9, -3));
+        List<Integer> expectedList = new ArrayList<>(Arrays.asList(1, 9, 0, 8, -3, 5, 2));
+        List<Integer> expected = new ArrayList<>(Arrays.asList(1, 9, -3, 5));
 
         Homework hw = new Homework();
         List<Integer> actual = hw.removeNegativeValue(expectedList);
@@ -32,8 +32,8 @@ class HomeworkTest {
 
     @Test
     void getMinSuccessfull() {
-        List<Integer> expectedList = new ArrayList<>(Arrays.asList(1, 9, 0, 8, -3));
-        int expected = -3;
+        List<Integer> expectedList = new ArrayList<>(Arrays.asList(1, 9, 0, 8, -3, -10));
+        int expected = -10;
 
         Homework hw = new Homework();
         int actual = hw.getMin(expectedList);
@@ -43,8 +43,8 @@ class HomeworkTest {
 
     @Test
     void getAverageSuccessfull() {
-        List<Integer> expectedList = new ArrayList<>(Arrays.asList(1, 9, 0, 8, -3));
-        int expected = 3;
+        List<Integer> expectedList = new ArrayList<>(Arrays.asList(1, 9, 0, 8, 2));
+        int expected = 4;
 
         Homework hw = new Homework();
         int actual = hw.getAverage(expectedList);
