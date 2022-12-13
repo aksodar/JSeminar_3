@@ -14,7 +14,15 @@ public class Task2 {
     }
 
     public static void printResultOfCheck(List<String> list){
-
+        for (String item : list) 
+            try{
+                Integer.parseInt(item);
+                System.out.println(item+" число");
+            }
+            catch(Exception ex){
+                System.out.println(item + " строка");
+            } 
+        
     }
 
 }
