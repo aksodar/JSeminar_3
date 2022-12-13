@@ -13,7 +13,6 @@ public class Homework {
         System.out.println("Минимальный элемент  (из оставшихся)  " + homework.getMin(list));
         System.out.println("Максимальный элемент (из оставшихся)  " + homework.getMax(list));
         System.out.println("Среднее значение     (из оставшихся)  " + homework.getAverage(list));
-
     }
 
     // Нужно удалить из него четные числа
