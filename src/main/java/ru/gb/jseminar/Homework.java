@@ -7,7 +7,6 @@ import java.util.List;
 
 public class Homework {
 
-
     // Пусть дан произвольный список целых чисел
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<>(Arrays.asList(1, 9, 2, 4, 25, -8, 98));
