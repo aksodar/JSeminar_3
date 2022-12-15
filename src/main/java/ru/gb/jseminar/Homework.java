@@ -48,14 +48,14 @@ public class Homework {
     }
 
     // Найти среднее значение
-    public Double getAverage(List<Integer> list){
+    public Integer getAverage(List<Integer> list){
         int count = 0;
         int sum = 0;
         for (Integer item: list){
             sum += item;
             count++;
         }
-        double avr = sum/count;
+        int avr = sum/count;
         return avr;
     }
 }
