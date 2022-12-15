@@ -18,7 +18,6 @@ public class Homework {
         System.out.println(hwObject.removeNegativeValue(list));
     }
 
-
     // Нужно удалить из него четные числа
     public List<Integer> removeNegativeValue(List<Integer> list){
         for (int i = 0; i < list.size(); i++){
