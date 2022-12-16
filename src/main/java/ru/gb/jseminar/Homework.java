@@ -11,7 +11,7 @@ public class Homework {
     }
 
     // Нужно удалить из него четные числа
-    public List<Integer> removeNegativeValue(List<Integer> list){
+    public List<Integer> removeEvenValue(List<Integer> list){
 
         return new ArrayList<>();
     }
