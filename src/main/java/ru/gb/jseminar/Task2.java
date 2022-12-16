@@ -13,8 +13,14 @@ public class Task2 {
         printResultOfCheck(list);
     }
 
-    public static void printResultOfCheck(List<String> list){
-
+    public static void printResultOfCheck(List<String> list) {
+        for (String k : list) {
+            try {
+                Integer.valueOf(k);
+                System.out.println(k + "Число");
+            } catch (Exception e) {
+                System.out.println(k + "Строка");
+            }
+        }
     }
-
 }
