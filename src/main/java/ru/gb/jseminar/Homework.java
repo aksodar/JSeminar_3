@@ -14,7 +14,7 @@ public class Homework {
         System.out.println("Без четных чисел - " + homeworkObject.removeOddValue(list));
         System.out.println("Минимальное - " + homeworkObject.getMin(list));
         System.out.println("Максимальное - " + homeworkObject.getMax(list));
-        System.out.println("Среднее значение - " + homeworkObject.getAverage(list));
+        System.out.println("Среднее значение - " + homeworkObject.getMax(list));
 
     }
 
@@ -26,7 +26,8 @@ public class Homework {
                 result.add(item);
             }
         }
-        return result;
+        list.removeAll(result);
+        return list;
     }
 
     // Найти минимальное значение
