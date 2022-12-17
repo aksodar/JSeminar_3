@@ -14,6 +14,14 @@ public class Task2 {
     }
 
     public static void printResultOfCheck(List<String> list){
+        for (String s : list) {
+            try {
+                Integer.valueOf(s);
+                System.out.println(s + " является числом");
+            } catch (Exception e) {
+                System.out.println(s + " не является числом");
+            }
+        }
 
     }
 
