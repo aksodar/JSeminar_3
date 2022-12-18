@@ -14,7 +14,7 @@ public class Homework {
         System.out.println("Без четных чисел - " + homeworkObject.removeOddValue(list));
         System.out.println("Минимальное - " + homeworkObject.getMin(list));
         System.out.println("Максимальное - " + homeworkObject.getMax(list));
-        System.out.println("Среднее значение - " + homeworkObject.getMax(list));
+        System.out.println("Среднее значение - " + homeworkObject.getAverage(list));
 
     }
 
@@ -22,7 +22,7 @@ public class Homework {
     public List<Integer> removeOddValue(List<Integer> list){
         List<Integer> result = new ArrayList<>();
         for (Integer item : list) {
-            if (item % 2 != 0 ){
+            if (item % 2 == 0 ){
                 result.add(item);
             }
         }
