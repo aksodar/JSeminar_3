@@ -1,4 +1,4 @@
-package ru.gb.jseminar;
+package JSeminar_3.src.main.java.ru.gb.jseminar;
 
 import java.util.ArrayList;
 import java.util.Arrays;
