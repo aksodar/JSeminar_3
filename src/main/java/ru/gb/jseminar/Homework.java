@@ -41,3 +41,4 @@ public class Homework {
         return sum / count;
     }
 }
+
