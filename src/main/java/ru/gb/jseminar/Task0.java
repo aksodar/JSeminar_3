@@ -1,4 +1,4 @@
-package ru.gb.jseminar;
+package Homework.homework3.JSeminar_3.src.main.java.ru.gb.jseminar;
 
 public class Task0 {
 
