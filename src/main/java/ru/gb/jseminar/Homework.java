@@ -43,8 +43,6 @@ public class Homework {
         for (Integer i: list){
             sum +=i;
         }
-
-
         return sum/count;
     }
 }
