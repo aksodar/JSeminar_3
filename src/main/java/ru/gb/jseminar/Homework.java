@@ -48,7 +48,6 @@ public class Homework {
             sum += item;
             count++;
         }
-
         return sum/count;
     }
 }
