@@ -18,6 +18,7 @@ public class Homework {
 
     // Найти минимальное значение
     public Integer getMin(List<Integer> list){
+        int s =11111;
 
         return 0;
     }
