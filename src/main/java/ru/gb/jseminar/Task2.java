@@ -14,7 +14,14 @@ public class Task2 {
     }
 
     public static void printResultOfCheck(List<String> list){
-
+    for (String s: list) {
+        try {
+            Integer.valueOf(s);
+            System.out.println( s + " - числовая строчка");
+        } catch (Exception e) {
+            System.out.println( s + " - строковая строчка");
+        }
+    }
     }
 
 }
